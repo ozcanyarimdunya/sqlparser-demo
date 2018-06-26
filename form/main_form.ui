@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0" colspan="2">
+     <widget class="QFrame" name="frame_e">
+      <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,3,0,1,2,1">
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_e_3">
+         <property name="text">
+          <string>From Date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEditCityIDDesc"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEditTimezone"/>
+       </item>
+       <item row="3" column="4" colspan="2">
+        <widget class="QDateEdit" name="dateEditTo">
+         <property name="displayFormat">
+          <string>MM/dd/yyyy</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2" rowspan="3">
+        <widget class="Line" name="line_e_2">
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="label_e_8">
+         <property name="text">
+          <string>CityID Desc</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_e_4">
+         <property name="text">
+          <string>To Date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="label_e_6">
+         <property name="text">
+          <string>CityID Layer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_e_5">
+         <property name="text">
+          <string>Timezone</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_e_7">
+         <property name="text">
+          <string>CityID</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_e">
+         <property name="text">
+          <string>Thematic</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditCityID"/>
+       </item>
+       <item row="2" column="0" colspan="6">
+        <widget class="Line" name="line_e">
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4" colspan="2">
+        <widget class="QComboBox" name="comboBoxCityIDLayer"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDateEdit" name="dateEditFrom">
+         <property name="displayFormat">
+          <string>MM/dd/yyyy</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_e_2">
+         <property name="text">
+          <string>Template</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="5">
+        <widget class="QLineEdit" name="lineEditBrowse">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string notr="true">Click to browse ..</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="5">
+        <widget class="QComboBox" name="comboBoxThematic"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QFrame" name="frame_e_2">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButtonReset">
+         <property name="text">
+          <string>Reset</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pushButtonCreate">
+         <property name="text">
+          <string>Create Script</string>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="3">
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="editTriggers">
+          <set>QAbstractItemView::DoubleClicked</set>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideMiddle</enum>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <property name="sortingEnabled">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Parameter</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Value</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Description</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>mcc</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>123</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>mcc desc</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>mnc</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>321</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>mnc desc</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>daytime</string>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>456</string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string>daytime description</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>comboBoxThematic</tabstop>
+  <tabstop>lineEditBrowse</tabstop>
+  <tabstop>dateEditFrom</tabstop>
+  <tabstop>dateEditTo</tabstop>
+  <tabstop>lineEditTimezone</tabstop>
+  <tabstop>comboBoxCityIDLayer</tabstop>
+  <tabstop>lineEditCityID</tabstop>
+  <tabstop>lineEditCityIDDesc</tabstop>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
